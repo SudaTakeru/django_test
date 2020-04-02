@@ -51,7 +51,7 @@ $ python manage.py runserver 8080
 
 ブラウザで http://localhost:8080 で接続確認ができる。
 
-## Part2　データベース
+## Part2　データベースを作って、管理者サイトから見る
 [tutorial part2](https://docs.djangoproject.com/en/3.0/intro/tutorial02/)
 
 いくつかのapplicationsを使うにはデータベースが必要
