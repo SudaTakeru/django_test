@@ -97,7 +97,16 @@ polls appを含めて実行
 ```
 python manage.py makemigrations polls
 ```
-
+pollsの中のSQLを確認
 ```
 python manage.py sqlmigrate polls 0001
 ```
+models.pyにかいた名前のデータテーブルが確認できる。
+
+Migrationsの作り方まとめ
+```
+models.py　を変える（データベースのクラスを作る）
+python manage.py makemigrations　データベースを作る
+python manage.py migrate　変更を適用する
+```
+
