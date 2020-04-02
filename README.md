@@ -11,9 +11,23 @@ python -m django --version
 
 ## 公式Tutorial
 
-https://docs.djangoproject.com/en/3.0/
+[公式サイト](https://docs.djangoproject.com/en/3.0/)
 
 ## Part1
-https://docs.djangoproject.com/en/3.0/intro/tutorial01/
+[tutorial part1](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 
+プロジェクトを作成
+django-admin startproject mysite
+mysite ディレクトリが作成される
 
+こんなディレクトリ構造ができる
+'''
+mysite/
+    manage.py
+    mysite/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
+'''
