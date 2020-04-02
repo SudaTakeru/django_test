@@ -2,11 +2,11 @@
 
 ## インストール
 ```
-pip install Django==3.0.5
+$ pip install Django==3.0.5
 ```
 インストールできたか確認
 ```
-python -m django --version
+$ python -m django --version
 ```
 
 ## 公式Tutorial
@@ -18,7 +18,7 @@ python -m django --version
 
 プロジェクトを作成
 ```
-django-admin startproject mysite
+$ django-admin startproject mysite
 ```
 mysite ディレクトリが作成される
 
@@ -37,7 +37,7 @@ mysite/
 
 サーバーを起動
 ```
-python manage.py runserver
+$ python manage.py runserver
 ```
 
 ブラウザで下記のURLに行くと接続が確認できる
@@ -46,7 +46,7 @@ http://127.0.0.1:8000/
 
 ポートの指定もできる
 ```
-python manage.py runserver 8080
+$ python manage.py runserver 8080
 ```
 
 ブラウザで http://localhost:8080 で接続確認ができる。
@@ -58,7 +58,7 @@ python manage.py runserver 8080
 以下のコマンドでデータベースを作れる。mysite/settings.pyでデータベースの設定が可能
 
 ```
-python manage.py migrate
+$ python manage.py migrate
 ```
 
 
@@ -97,11 +97,11 @@ INSTALLED_APPS = [
 
 polls appを含めて実行
 ```
-python manage.py makemigrations polls
+$ python manage.py makemigrations polls
 ```
 pollsの中のSQLを確認
 ```
-python manage.py sqlmigrate polls 0001
+$ python manage.py sqlmigrate polls 0001
 ```
 models.pyにかいた名前のデータテーブルが確認できる。
 
@@ -115,9 +115,9 @@ python manage.py migrate　変更を適用する
 ### Creating an admin user
 管理者アカウントを作る
 ```
-python manage.py createsuperuser　管理者アカウントを作る
+$ python manage.py createsuperuser　管理者アカウントを作る
 
-python manage.py runserver　サーバーを立ち上げると
+$ python manage.py runserver　サーバーを立ち上げると
 ```
 http://127.0.0.1:8000/admin/　でログイン画面が出てくる
 
