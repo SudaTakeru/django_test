@@ -22,12 +22,14 @@ mysite ディレクトリが作成される
 
 こんなディレクトリ構造ができる
 '''
-mysite/　　
-    manage.py　　
-    mysite/　　
-        __init__.py　　
-        settings.py　　
-        urls.py　　
-        asgi.py　　
-        wsgi.py　　
+mysite/
+
+    manage.py
+
+    mysite/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
 '''
