@@ -136,3 +136,7 @@ admin.site.register(Question)
 管理者ページから、データベースの情報（migrant）が見れる（編集できるようになった）
 
 
+## Part3 appを書く
+[tutorial part3](https://docs.djangoproject.com/en/3.0/intro/tutorial03/)
+
+
