@@ -35,7 +35,7 @@ mysite/
         wsgi.py
 ```
 
-サーバーを起動
+mysiteに入って、サーバーを起動
 ```
 $ python manage.py runserver
 ```
@@ -55,7 +55,7 @@ $ python manage.py runserver 8080
 [tutorial part2](https://docs.djangoproject.com/en/3.0/intro/tutorial02/)
 
 いくつかのapplicationsを使うにはデータベースが必要
-以下のコマンドでデータベースを作れる。mysite/settings.pyでデータベースの設定が可能
+以下のコマンドでデータベースを作れる。mysite/settings.pyでMigrations(データベース?)の設定が可能
 
 ```
 $ python manage.py migrate
@@ -78,14 +78,14 @@ class Choice(models.Model):
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
 ```
-Question　と　Choice　のデータを準備
+Question　と　Choice　のデータのクラスができた。
 
 
 mysite/settings.pyを書き換える。上で書いたモデルを反映
 
 ```
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig',
+    'polls.apps.PollsConfig', # ココが増える
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
