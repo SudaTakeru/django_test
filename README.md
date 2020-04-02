@@ -17,7 +17,9 @@ python -m django --version
 [tutorial part1](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 
 プロジェクトを作成
+```
 django-admin startproject mysite
+```
 mysite ディレクトリが作成される
 
 こんなディレクトリ構造ができる
@@ -109,4 +111,28 @@ models.py　を変える（データベースのクラスを作る）
 python manage.py makemigrations　データベースを作る
 python manage.py migrate　変更を適用する
 ```
+
+### Creating an admin user
+管理者アカウントを作る
+```
+python manage.py createsuperuser　管理者アカウントを作る
+
+python manage.py runserver　サーバーを立ち上げると
+```
+http://127.0.0.1:8000/admin/　でログイン画面が出てくる
+
+ログインできる！！
+
+
+polls/admin.pyを以下のように書き換え、管理者画面にログインすると・・・
+```
+from django.contrib import admin
+
+from .models import Question
+
+admin.site.register(Question)
+```
+ページにQuestionがでてくる！！
+管理者ページから、データベースの情報（migrant）が見れる（編集できるようになった）
+
 
