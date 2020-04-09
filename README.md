@@ -9,25 +9,18 @@ $ pip install Django==3.0.5
 $ python -m django --version
 ```
 
-## 公式Tutorial
-
-[公式サイト](https://docs.djangoproject.com/en/3.0/)
-
-## Part1 とりあえずプロジェクトを作りサーバーの接続を確認する
-[tutorial part1](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
-
 プロジェクトを作成
 ```
-$ django-admin startproject mysite
+$ django-admin startproject minitwitter
 ```
 mysite ディレクトリが作成される
 
 こんなディレクトリ構造ができる
 
 ```
-mysite/
+minitwitter/
     manage.py
-    mysite/
+    minitwitter/
         __init__.py
         settings.py
         urls.py
@@ -35,7 +28,7 @@ mysite/
         wsgi.py
 ```
 
-mysiteに入って、サーバーを起動
+minitwitterに入って、サーバーを起動
 ```
 $ python manage.py runserver
 ```
@@ -43,13 +36,10 @@ $ python manage.py runserver
 ブラウザで下記のURLに行くと接続が確認できる
 http://127.0.0.1:8000/
 
-
-ポートの指定もできる
+アプリを作る。
 ```
-$ python manage.py runserver 8080
+python manage.py startapp app1
 ```
-
-ブラウザで http://localhost:8080 で接続確認ができる。
 
 ## Part2　データベースを作って、管理者サイトから見る
 [tutorial part2](https://docs.djangoproject.com/en/3.0/intro/tutorial02/)
