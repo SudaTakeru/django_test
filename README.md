@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     ...
     ]
 ...
-
+# 画像のアップロード・表示用
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
